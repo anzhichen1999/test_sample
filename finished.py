@@ -280,7 +280,7 @@ if __name__ == '__main__':
         "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
     }
 
-    Filtered_Data_Path = 'unique_location.csv'  # ### ---原始关键词文件路径---  ###
+    Filtered_Data_Path = 'unique_NYC_location.csv'  # ### ---原始关键词文件路径---  ###
     Location_File_Path = 'data'  # ### ---下载的地点检索数据路径---  ###
     Save_Comment_Path = 'result_file'  # ### ---保存评论路径---  ###
 
@@ -299,16 +299,16 @@ if __name__ == '__main__':
 
 
     # -----------评论爬取-------------------------
-    #get_comment_data(Location_File_Path)
-    #print('地点评论已全部下载完成')
+    get_comment_data(Location_File_Path)
+    print('地点评论已全部下载完成')
 
     # get_comment_data(Location_File_Path,Location_File_Commentdata_Path)  ###### 另一套保存地址 可不用
 
 
     # -----------评论数据清洗 保存-----------------
-    #data_clean()
-    #save_comment(Filtered_Data_Path,Location_File_Path,Save_Comment_Path)
-    #print('评论数据已全部下载完成')
+    data_clean()
+    save_comment(Filtered_Data_Path,Location_File_Path,Save_Comment_Path)
+    print('评论数据已全部下载完成')
 
     # save_comment(Filtered_Data_Path,Location_File_Commentdata_Path,Save_Comment_Path)  ###### 另一套保存地址 可不用
 
