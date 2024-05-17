@@ -20,7 +20,29 @@ def get_search_list(keyword, lat, lon, file_path):
     keyword_str = parse.quote(keyword)
     page = 0
     z = 448792
-    url = f"https://www.google.com/search?tbm=map&authuser=0&hl=zh-CN&gl=us&pb=!4m12!1m3!1d{z}!2d{lon}!3d{lat}!2m3!1f0!2f0!3f0!3m2!1i1920!2i637!4f13.1!7i20!8i0!10b1!12m16!1m1!18b1!2m3!5m1!6e2!20e3!10b1!12b1!13b1!16b1!17m1!3e1!20m3!5e2!6b1!14b1!19m4!2m3!1i360!2i120!4i8!20m57!2m2!1i203!2i100!3m2!2i4!5b1!6m6!1m2!1i86!2i86!1m2!1i408!2i240!7m42!1m3!1e1!2b0!3e3!1m3!1e2!2b1!3e2!1m3!1e2!2b0!3e3!1m3!1e8!2b0!3e3!1m3!1e10!2b0!3e3!1m3!1e10!2b1!3e2!1m3!1e9!2b1!3e2!1m3!1e10!2b0!3e3!1m3!1e10!2b1!3e2!1m3!1e10!2b0!3e4!2b1!4b1!9b0!22m6!1sSlrAZfGlA8-S0PEPk52koA8%3A3007!2s1i%3A0%2Ct%3A20588%2Cp%3ASlrAZfGlA8-S0PEPk52koA8%3A3007!4m1!2i20588!7e81!12e3!24m94!1m29!13m9!2b1!3b1!4b1!6i1!8b1!9b1!14b1!20b1!25b1!18m18!3b1!4b1!5b1!6b1!9b1!12b1!13b1!14b1!15b1!17b1!20b1!21b1!22b1!25b1!27m1!1b0!28b0!31b0!10m1!8e3!11m1!3e1!14m1!3b1!17b1!20m2!1e3!1e6!24b1!25b1!26b1!29b1!30m1!2b1!36b1!39m3!2m2!2i1!3i1!43b1!52b1!54m1!1b1!55b1!56m2!1b1!3b1!65m5!3m4!1m3!1m2!1i224!2i298!71b1!72m17!1m5!1b1!2b1!3b1!5b1!7b1!4b1!8m8!1m6!4m1!1e1!4m1!1e3!4m1!1e4!3sother_user_reviews!9b1!89b1!103b1!113b1!114m3!1b1!2m1!1b1!117b1!122m1!1b1!26m4!2m3!1i80!2i92!4i8!30m28!1m6!1m2!1i0!2i0!2m2!1i530!2i637!1m6!1m2!1i1870!2i0!2m2!1i1920!2i637!1m6!1m2!1i0!2i0!2m2!1i1920!2i20!1m6!1m2!1i0!2i617!2m2!1i1920!2i637!31b1!34m18!2b1!3b1!4b1!6b1!8m6!1b1!3b1!4b1!5b1!6b1!7b1!9b1!12b1!14b1!20b1!23b1!25b1!26b1!37m1!1e81!42b1!46m1!1e10!47m0!49m7!3b1!6m2!1b1!2b1!7m2!1e3!2b1!50m26!1m21!2m7!1u3!4z6JCl5Lia5Lit!5e1!9s0ahUKEwiF2tqos5OEAxX8ADQIHZgiDgUQ_KkBCNUFKBY!10m2!3m1!1e1!2m7!1u2!4z6K-E5YiG5pyA6auY!5e1!9s0ahUKEwiF2tqos5OEAxX8ADQIHZgiDgUQ_KkBCNYFKBc!10m2!2m1!1e1!3m1!1u3!3m1!1u2!4BIAE!2e2!3m2!1b1!3b1!59BQ2dBd0Fn!61b1!67m2!7b1!10b1!69i680&q={keyword_str}&tch=1&ech=35&psi=SlrAZfGlA8-S0PEPk52koA8.1707104844998.1"
+    url = (
+        f"https://www.google.com/search?tbm=map&authuser=0&hl=zh-CN&gl=us&pb=!4m12!1m3!1d{z}!"
+        f"2d{lon}!3d{lat}!2m3!1f0!2f0!3f0!3m2!1i1920!2i637!4f13.1!7i20!8i0!10b1!12m16!1m1!"
+        "18b1!2m3!5m1!6e2!20e3!10b1!12b1!13b1!16b1!17m1!3e1!20m3!5e2!6b1!14b1!19m4!2m3!"
+        "1i360!2i120!4i8!20m57!2m2!1i203!2i100!3m2!2i4!5b1!6m6!1m2!1i86!2i86!1m2!1i408!"
+        "2i240!7m42!1m3!1e1!2b0!3e3!1m3!1e2!2b1!3e2!1m3!1e2!2b0!3e3!1m3!1e8!2b0!3e3!1m3!"
+        "1e10!2b0!3e3!1m3!1e10!2b1!3e2!1m3!1e9!2b1!3e2!1m3!1e10!2b0!3e3!1m3!1e10!2b1!3e2!"
+        "1m3!1e10!2b0!3e4!2b1!4b1!9b0!22m6!1sSlrAZfGlA8-S0PEPk52koA8%3A3007!2s1i%3A0%2Ct%3A20588!"
+        "2Cp%3ASlrAZfGlA8-S0PEPk52koA8%3A3007!4m1!2i20588!7e81!12e3!24m94!1m29!13m9!2b1!"
+        "3b1!4b1!6i1!8b1!9b1!14b1!20b1!25b1!18m18!3b1!4b1!5b1!6b1!9b1!12b1!13b1!14b1!"
+        "15b1!17b1!20b1!21b1!22b1!25b1!27m1!1b0!28b0!31b0!10m1!8e3!11m1!3e1!14m1!3b1!"
+        "17b1!20m2!1e3!1e6!24b1!25b1!26b1!29b1!30m1!2b1!36b1!39m3!2m2!2i1!3i1!43b1!"
+        "52b1!54m1!1b1!55b1!56m2!1b1!3b1!65m5!3m4!1m3!1m2!1i224!2i298!71b1!72m17!1m5!"
+        "1b1!2b1!3b1!5b1!7b1!4b1!8m8!1m6!4m1!1e1!4m1!1e3!4m1!1e4!3sother_user_reviews!"
+        "9b1!89b1!103b1!113b1!114m3!1b1!2m1!1b1!117b1!122m1!1b1!26m4!2m3!1i80!2i92!4i8!"
+        "30m28!1m6!1m2!1i0!2i0!2m2!1i530!2i637!1m6!1m2!1i1870!2i0!2m2!1i1920!2i637!"
+        "1m6!1m2!1i0!2i0!2m2!1i1920!2i20!1m6!1m2!1i0!2i617!2m2!1i1920!2i637!31b1!34m18!"
+        "2b1!3b1!4b1!6b1!8m6!1b1!3b1!4b1!5b1!6b1!7b1!9b1!12b1!14b1!20b1!23b1!25b1!26b1!"
+        "37m1!1e81!42b1!46m1!1e10!47m0!49m7!3b1!6m2!1b1!2b1!7m2!1e3!2b1!50m26!1m21!2m7!"
+        "1u3!4z6JCl5Lia5Lit!5e1!9s0ahUKEwiF2tqos5OEAxX8ADQIHZgiDgUQ_KkBCNUFKBY!"
+        "10m2!3m1!1e1!2m7!1u2!4z6K-E5YiG5pyA6auY!5e1!9s0ahUKEwiF2tqos5OEAxX8ADQIHZgiDgUQ_KkBCNYFKBc!"
+        "10m2!2m1!1e1!3m1!1u3!3m1!1u2!4BIAE!2e2!3m2!1b1!3b1!59BQ2dBd0Fn!61b1!67m2!7b1!10b1!69i680&q={keyword_str}&tch=1&ech=35&psi=SlrAZfGlA8-S0PEPk52koA8.1707104844998.1"
+    )
     result = 0
     while 1:
         try:
@@ -280,9 +302,9 @@ if __name__ == '__main__':
         "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
     }
 
-    Filtered_Data_Path = 'unique_SD_location.csv'  # ### ---原始关键词文件路径---  ###
-    Location_File_Path = 'data'  # ### ---下载的地点检索数据路径---  ###
-    Save_Comment_Path = 'result_file'  # ### ---保存评论路径---  ###
+    Filtered_Data_Path = r'unique_SD_location.csv'  # ### ---原始关键词文件路径---  ###
+    Location_File_Path = r'data'  # ### ---下载的地点检索数据路径---  ###
+    Save_Comment_Path = r'result_file'  # ### ---保存评论路径---  ###
 
     # Location_File_Commentdata_Path = '/Users/rongtian/Desktop/2144883396941630292/commentdata'  # ##### 另一套保存路径 可不用   ###
     history_list = []
