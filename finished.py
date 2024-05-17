@@ -106,7 +106,7 @@ def get_key_words():
     return keyword_list
 
 def location_search(keyword_list):
-    with ThreadPoolExecutor(30) as t:
+    with ThreadPoolExecutor(50) as t:
         for keyword_dic in keyword_list:
             for keyword, coor_list in keyword_dic.items():
                 file_path = f'{Location_File_Path}/{keyword}_result.csv'
@@ -189,7 +189,7 @@ def get_comment_data(Location_Path):
                 with open(file_path, mode='w', encoding='utf-8-sig', newline='') as csvfile:
                     writer = csv.writer(csvfile)
                     writer.writerow(['name', 'lat', 'lon', 'text', 'date', 'score'])
-                with ThreadPoolExecutor(30) as t:
+                with ThreadPoolExecutor(50) as t:
                     futures = []
                     for i in range(len(df)):
                         if 'para' in df.columns:

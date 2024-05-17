@@ -1,10 +1,10 @@
 #!/bin/bash
 #SBATCH --job-name=Q1
 #SBATCH --account=macs30113
-#SBATCH --ntasks=20
+#SBATCH --ntasks=40
 #SBATCH --nodes=10
 #SBATCH --time=00:10:00
-#SBATCH --partition=caslake
+#SBATCH --partition=broadwl
 #SBATCH --output=Q1.out
 #SBATCH --mem-per-cpu=30G
 
