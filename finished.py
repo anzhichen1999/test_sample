@@ -280,7 +280,7 @@ if __name__ == '__main__':
         "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
     }
 
-    Filtered_Data_Path = 'unique_NYC_location.csv'  # ### ---原始关键词文件路径---  ###
+    Filtered_Data_Path = 'unique_SD_location.csv'  # ### ---原始关键词文件路径---  ###
     Location_File_Path = 'data'  # ### ---下载的地点检索数据路径---  ###
     Save_Comment_Path = 'result_file'  # ### ---保存评论路径---  ###
 
